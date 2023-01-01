@@ -7,9 +7,9 @@ void shift_element(int* arr, int i);
 void insertion_sort(int* arr , int len);
 
 int main () {
-    int *arr = malloc(LEN);
+    int arr[LEN];
     for(int i = 0; i < LEN; i++) {
-        scanf("%d ", arr+i);
+        scanf("%d", arr+i);
     }
     insertion_sort(arr, LEN);
     for(int i = 0; i < LEN; i++) {
@@ -19,7 +19,6 @@ int main () {
         }
         printf("%d,", *(arr+i));
     }
-    free(arr);
     return 0;
 }
 
