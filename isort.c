@@ -13,10 +13,11 @@ int main () {
     }
     insertion_sort(arr, LEN);
     for(int i = 0; i < LEN; i++) {
-        if(i == 0) {
-            printf("%d", *(arr+i));
+        if(i == LEN - 1) {
+            printf("%d\n", *(arr+i));
+            break;
         }
-        else printf(",%d", *(arr+i));
+        printf("%d,", *(arr+i));
     }
     return 0;
 }
