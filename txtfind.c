@@ -18,7 +18,7 @@ void print_lines(char * str);
 void print_similar_words(char * str);
 
 int main (int argc, char *argv[]) {
-    char line[LINE], word[WORD], *str = malloc(WORD), *choice = malloc(WORD);
+    char line[LINE], *str = malloc(WORD), *choice = malloc(WORD);
     getWord(str);
     getWord(choice);
     if(choice[0] == A) {
