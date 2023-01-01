@@ -9,12 +9,12 @@ void insertion_sort(int* arr , int len);
 int main () {
     int arr[LEN];
     for(int i = 0; i < LEN; i++) {
-        scanf("%d", arr+i);
+        scanf("%d ", arr + i);
     }
     insertion_sort(arr, LEN);
     for(int i = 0; i < LEN; i++) {
         if(i == LEN - 1) {
-            printf("%d", *(arr+i));
+            printf("%d", *(arr +i ));
             break;
         }
         printf("%d,", *(arr+i));
